@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+             <!--fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="css/media.css">
+
+    <title>take a fly</title>
+  </head>
+  <body>
+            <!--header start-->
+   <header class="header">
+     <div class="container">
+      
+      <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+     <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png"alt="logo" class="logo" width="120">
+     </a>
+
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_custom" aria-controls="nav_custom" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>-->
+
+    <div class=" navbar-collapse menu" id="nav_custom">
+     <ul class="navbar-nav m-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#flight">Flight</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#hotel-tab">Hotel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#package-tab">Tour Packages</a>
+        </li>
+    </ul>
+
+    <!--sign in-->
+    <input type="checkbox" id="show">
+    <label for="show" class="show-btn">Sign In</label>
+       <div class="log-form">
+        <label for="show" class="close-btn fas fa-times"></label>
+         <div class="title-text">
+            <div class="title login">
+               Login Form
+            </div>
+            <div class="title signup">
+               Signup Form
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  
+                  <div class="pass-link">
+                     <a href="#" data-toggle="modal" data-target="#exampleModal">Forgot password?</a>
+                  </div>
+                  <div class="field l-btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login" id="input__login__btn">
+                  </div>
+                  <div class="signup-link">
+                     Don't have an Account? <a href="">Signup now</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm password" required>
+                  </div>
+                  <div class="field l-btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Signup" >
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+     <!--sign in--> 
+         <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: #03A89E;">Reset password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+           <div class="modal-field">
+             <input type="password" class="form-pw" placeholder="Enter Your Email">
+           </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn2 btn-danger" data-dismiss="modal">Close</button>
+        <input type="submit" value="Send" class="btn">
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal end-->
+    </div>
+  </nav> 
+  <!--navbar end-->
+    </div>
+  </header>
+<section class="banner" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="searchbar">
+           <div class="section-tab text-center pl-4">
+             <ul class="nav nav-tabs" id="myTab" role="tablist">
+               <li class="nav-item">
+                 <a class="nav-link d-flex align-items-center active" id="flight-tab" data-toggle="tab" href="#flight"
+                   role="tab" aria-controls="flight" aria-selected="true">
+                   <i class="fas fa-helicopter mr-1"></i>Flights
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link d-flex align-items-center" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab"
+                   aria-controls="hotel" aria-selected="false">
+                   <i class="fas fa-utensils mr-1"></i>Hotels
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link d-flex align-items-center" id="package-tab" data-toggle="tab" href="#package"
+                   role="tab" aria-controls="package" aria-selected="false">
+                   <i class="fas fa-route mr-1"></i>Tour Packages
+                 </a>
+               </li>
+             </ul>
+           </div>
+           <!--search type start-->
+           <!--flight start-->
+           <div class="tab-content search-fields-container" id="myTabContent">
+             <div class="tab-pane fade active show" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+               <div class="section-tab section-tab-2 pb-3">
+                 <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                   <li class="nav-item">
+                     <a class="nav-link active" id="one-way-tab" data-toggle="tab" href="#one-way" role="tab"
+                       aria-controls="one-way" aria-selected="true">
+                       One way
+                     </a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" id="round-trip-tab" data-toggle="tab" href="#round-trip" role="tab"
+                       aria-controls="round-trip" aria-selected="false">
+                       Round-trip
+                     </a>
+                   </li>
+                 </ul>
+               </div>
+               <!--flight end-->
+               <!--flight form start-->
+               <!--one way-->
+               <div class="tab-content" id="myTabContent3">
+                 <div class="tab-pane fade active show" id="one-way" role="tabpanel" aria-labelledby="one-way-tab">
+                   <div class="contact-form-action">
+                     <form action="#" class="row align-items-center">
+                       <div class="col-lg-6 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Flying from</label>
+                           <div class="form-group">
+                             <span class="fas fa-map-marker-alt form-icon"></span>
+                             <input class="form-control" type="text" placeholder="City or airport">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-6">
+                         <div class="input-box">
+                           <label class="label-text">Flying to</label>
+                           <div class="form-group">
+                             <span class="fas fa-map-marker-alt form-icon"></span>
+                             <input class="form-control" type="text" placeholder="City or airport">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Departing</label>
+                           <div class="form-group">
+                             <span class="far fa-calendar-alt form-icon"></span>
+                             <input class="date-range form-control" type="date" name="daterange-single">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Returning</label>
+                           <div class="form-group">
+                             <span class="far fa-calendar-alt form-icon"></span>
+                             <input class="date-range form-control" type="date" name="daterange-single">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Passengers</label>
+                           <div class="form-group">
+                             <div class="dropdown dropdown-contain gty-container">
+                               <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown"
+                                 aria-expanded="false">
+                                 <span class="adult" data-text="Adult" data-text-multi="Adults">0 Adult</span>
+                                 -
+                                 <span class="children" data-text="Child" data-text-multi="Children">0 Child</span>
+                                 -
+                                 <span class="infant" data-text="Infant" data-text-multi="Infant">0 Infant</span>
+                               </a>
+                               <div class="dropdown-menu dropdown-menu-wrap">
+                                 <div class="dropdown-item">
+                                   <div class="qty-box d-flex align-items-center justify-content-between">
+                                     <label>Adults</label>
+                                     <div class="qtyBtn d-flex align-items-center">
+                                       <div class="qtyDec">-</div>
+                                       <input type="text" name="adult_number" value="0">
+                                       <div class="qtyInc">+</div>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="dropdown-item">
+                                   <div class="qty-box d-flex align-items-center justify-content-between">
+                                     <label>Children</label>
+                                     <div class="qtyBtn d-flex align-items-center">
+                                       <div class="qtyDec">-</div>
+                                       <input type="text" name="child_number" value="0">
+                                       <div class="qtyInc">+</div>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="dropdown-item">
+                                   <div class="qty-box d-flex align-items-center justify-content-between">
+                                     <label>Infants</label>
+                                     <div class="qtyBtn d-flex align-items-center">
+                                       <div class="qtyDec">-</div>
+                                       <input type="text" name="infants_number" value="0" class="qty-input">
+                                       <div class="qtyInc">+</div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                            <!--  end dropdown -->
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+
+                       <div class="col-lg-3">
+                         <a href="booking-form.html" class="s-btn w-100 text-center margin-top-20px">Search Now</a>
+                       </div>
+                     </form>
+                   </div>
+                 </div>
+                 <!--one way end-->
+                 <!--round trip start-->
+                 <div class="tab-pane fade" id="round-trip" role="tabpanel" aria-labelledby="round-trip-tab">
+                   <div class="contact-form-action">
+                     <form action="#" class="row align-items-center">
+                       <div class="col-lg-6 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Flying from</label>
+                           <div class="form-group">
+                             <span class="fas fa-map-marker-alt form-icon"></span>
+                             <input class="form-control" type="text" placeholder="City or airport">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-6">
+                         <div class="input-box">
+                           <label class="label-text">Flying to</label>
+                           <div class="form-group">
+                             <span class="fas fa-map-marker-alt form-icon"></span>
+                             <input class="form-control" type="text" placeholder="City or airport">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Departing</label>
+                           <div class="form-group">
+                             <span class="far fa-calendar-alt form-icon"></span>
+                             <input class="date-range form-control" type="date" name="daterange">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Returning</label>
+                           <div class="form-group">
+                             <span class="far fa-calendar-alt form-icon"></span>
+                             <input class="date-range form-control" type="date" name="daterange">
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3 pr-0">
+                         <div class="input-box">
+                           <label class="label-text">Passengers</label>
+                           <div class="form-group">
+                             <div class="dropdown dropdown-contain gty-container">
+                               <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown"
+                                 aria-expanded="false">
+                                 <span class="adult" data-text="Adult" data-text-multi="Adults">0 Adult</span>
+                                 -
+                                 <span class="children" data-text="Child" data-text-multi="Children">0 Child</span>
+                                 -
+                                 <span class="infant" data-text="Infant" data-text-multi="Infant">0 Infant</span>
+                               </a>
+                               <div class="dropdown-menu dropdown-menu-wrap">
+                                 <div class="dropdown-item">
+                                   <div class="qty-box d-flex align-items-center justify-content-between">
+                                     <label>Adults</label>
+                                     <div class="qtyBtn d-flex align-items-center">
+                                       <div class="qtyDec">-</div>
+                                       <input type="text" name="adult_number" value="0">
+                                       <div class="qtyInc">+</div>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="dropdown-item">
+                                   <div class="qty-box d-flex align-items-center justify-content-between">
+                                     <label>Children</label>
+                                     <div class="qtyBtn d-flex align-items-center">
+                                       <div class="qtyDec">-</div>
+                                       <input type="text" name="child_number" value="0">
+                                       <div class="qtyInc">+</div>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="dropdown-item">
+                                   <div class="qty-box d-flex align-items-center justify-content-between">
+                                     <label>Infants</label>
+                                     <div class="qtyBtn d-flex align-items-center">
+                                       <div class="qtyDec">-</div>
+                                       <input type="text" name="infants_number" value="0" class="qty-input">
+                                       <div class="qtyInc">+</div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                            <!--  end dropdown -->
+                           </div>
+                         </div>
+                       </div>
+                       <!-- end col-lg-3 -->
+                       <div class="col-lg-3">
+                         <a href="booking-form.html" class="s-btn w-100 text-center margin-top-20px">Search Now</a>
+                       </div>
+                     </form>
+                   </div>
+
+                 </div>
+                 <!--round trip end-->
+
+                 <!--flight form end-->
+
+               </div>
+               <!--search type end-->
+             </div>
+             <!--hotel form start-->
+             <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+               <div class="contact-form-action">
+                 <form action="#" class="row align-items-center">
+                   <div class="col-lg-3 pr-0">
+                     <div class="input-box">
+                       <label class="label-text">Destination / Hotel name</label>
+                       <div class="form-group">
+                         <span class="fas fa-map-marker-alt form-icon"></span>
+                         <input class="form-control" type="text" placeholder="Enter city or property">
+                       </div>
+                     </div>
+                   </div>
+                   <!-- end col-lg-3 -->
+                   <div class="col-lg-3 pr-0">
+                     <div class="input-box">
+                       <label class="label-text">Check in</label>
+                       <div class="form-group">
+                         <span class="far fa-calendar-alt form-icon"></span>
+                         <input class="date-range form-control" type="date" name="daterange-single">
+                       </div>
+                     </div>
+                   </div>
+                   <!-- end col-lg-3 -->
+                   <div class="col-lg-3 pr-0">
+                     <div class="input-box">
+                       <label class="label-text">Check out</label>
+                       <div class="form-group">
+                         <span class="far fa-calendar-alt form-icon"></span>
+                         <input class="date-range form-control" type="date" name="daterange-single" >
+                       </div>
+                     </div>
+                   </div>
+                   <!-- end col-lg-3 -->
+                   <div class="col-lg-3">
+                     <div class="input-box">
+                       <label class="label-text">Guests</label>
+                       <div class="form-group">
+                         <div class="dropdown dropdown-contain gty-container">
+                           <a class="dropdown-toggle dropdown-btn" href="#" role="button" data-toggle="dropdown"
+                             aria-expanded="false">
+
+                             <span class="room" data-text="Room" data-text-multi="Room">0 Room</span>
+                             -
+                             <span class="adult" data-text="Adult" data-text-multi="Adults">0 Adult</span>
+                             -
+                             <span class="children" data-text="Child" data-text-multi="Children">0 Child</span>
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-wrap">
+                             <div class="dropdown-item">
+                               <div class="qty-box d-flex align-items-center justify-content-between">
+                                 <label>Rooms</label>
+                                 <div class="qtyBtn d-flex align-items-center">
+                                   <div class="qtyDec">-</div>
+                                   <input type="text" name="room_number" value="0" class="qty-input">
+                                   <div class="qtyInc">+</div>
+                                 </div>
+                               </div>
+                             </div>
+
+                             <div class="dropdown-item">
+                               <div class="qty-box d-flex align-items-center justify-content-between">
+                                 <label>Adults</label>
+                                 <div class="qtyBtn d-flex align-items-center">
+                                   <div class="qtyDec">-</div>
+                                   <input type="text" name="adult_number" value="0">
+                                   <div class="qtyInc">+</div>
+                                 </div>
+                               </div>
+                             </div>
+
+                             <div class="dropdown-item">
+                               <div class="qty-box d-flex align-items-center justify-content-between">
+                                 <label>Children</label>
+                                 <div class="qtyBtn d-flex align-items-center">
+                                   <div class="qtyDec">-</div>
+                                   <input type="text" name="child_number" value="0">
+                                   <div class="qtyInc">+</div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <!-- end dropdown -->
+                       </div>
+                     </div>
+                   </div><!-- end col-lg-3 -->
+                 </form>
+               </div>
+
+               <div class="btn-box">
+                 <a href="booking-form.html" class="s-btn">Search Now</a>
+               </div>
+             </div>
+             <!--hotel form end-->
+             <!--tour packages-->
+             <div class="tab-pane fade" id="package" role="tabpanel" aria-labelledby="hotel-tab">
+               <div class="contact-form-action">
+                 <form action="#" class="row align-items-center">
+                   <div class="col-md-11 pr-0">
+                     <div class="input-box">
+                       <label class="label-text">Tour Packages</label>
+                       <div class="form-group">
+                         <select class="form-select" aria-label="Default select example">
+                           <option selected>International</option>
+                           <option value="1">Domestic</option>
+                         </select>
+                       </div>
+
+                     </div>
+                   </div>
+                   <div class="btn-box">
+                     <a href="booking-form.html" class="s-btn">Search Now</a>
+                   </div>
+
+                 </form>
+               </div>
+             </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!--blog start-->
+<section id="blog" class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 m-auto">
+        <div class="b_title">
+          <h2>Popular Destinations</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--single service start-->
+    <div class="col-md-4">
+      <div class="b_content">
+        <img src="img/nepal.jpg" alt="massage">
+        <h3>Nepal</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo dignissimos magni dolor quia autem tempora.</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </div>
+      <!--single service end-->
+      <!--single service start-->
+    <div class="col-md-4">
+      <div class="b_content">
+        <img src="img/indonesia.jpg" alt="massage">
+        <h3>Indonesia</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Repudiandae accusantium voluptas eum.</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </div>
+      <!--single service end-->
+      <!--single service start-->
+    <div class="col-md-4">
+      <div class="b_content">
+        <img src="img/maldives.jpg" alt="massage">
+        <h3>Maldives</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis porro magni officiis aliquam, maiores, adipisci?</p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </div>
+      <!--single service end-->
+    </div>
+</section>
+    <!--blog end-->
+    <!---contact start-->
+<section id="Contact" class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="c_title">
+          <h1>Contact Info:</h1>
+
+          <ul class="contact-info">
+              <li>
+                <strong>Address:</strong>Uttar Badda, Dhaka
+              </li>
+              <li>
+                <strong>Phone:</strong> +44 987 065 908
+              </li>
+              <li>
+                  <strong>Email:</strong> support@takeafly.com
+              </li>
+          </ul>
+            <div class="social-icon">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-messenger"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <form action="#" class="contact-form nk-form-ajax">
+          <div class="row vertical-gap">
+            <div class="col-md-6">
+              <input type="text" class="form-control required" name="name" placeholder="Your Name">
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" class="form-control required" name="email" placeholder="Your Email">
+            </div>
+          </div>
+
+            <div class="gap"></div>
+              <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
+              <div class="gap">
+              </div>
+              
+              <button class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>   
+    <!---contact end-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!--single item start-->
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="f_img">
+          <img src="img/take a fly logo.png" alt="logo" width="200">
+          <p>
+            Sat-Thurs: 10AM-9PM &amp; Friday/Govt. Holidays: 10AM-6PM<br>Dedicated Customer Support
+          </p>
+        </div>
+        <div class="f-icon">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-messenger"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      </div>
+      <!--single item end-->
+
+      <!--single item start-->
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for latest updates & promotions</p>
+          <input type="email" class="form-control required f_email" placeholder="Enter your E-mail  Address">
+          <input type="submit" value="Submit" class="btn">
+            
+          </div>
+      </div>
+      <!--single item end-->
+      <!--single item start-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="f_text">
+            <h4>Discover</h4>
+            <p><a href="#Contact">Contact</a></p>
+            <p><a href="#">About</a></p>
+            <p><a href="#blog">Blog</a></p>
+            <p><a href="#">Privacy & Policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">FAQs</a></p>
+          </div>
+        </div>
+        <!--single item end-->
+         <!--single item start-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <h4 class="pay">Payment method</h4>
+          <div class="f_img">
+            <img src="img/bkash.png" alt="">
+            <img src="img/nagad.png" alt="">
+            <img src="img/visa.png" alt="">
+            <img src="img/mastercard.png" alt="">
+            <img src="img/rocket.png" alt="">
+          </div>
+        </div>
+         <!--single item end-->
+       <hr class="separate">
+         <div class="col-md-9">
+            <div class="copy">
+              <p>©Copyright Take A Fly | All Rights Reserved</p>
+            </div>
+         </div>
+        <!--chat option-->
+      <div class="col-md-3">
+          <div id="fb-root"></div>
+
+              <!-- Your Chat Plugin code -->
+          <div id="fb-customer-chat" class="fb-customerchat">
+          </div>   
+    
+        <!--chat option-->
+      </div>
+    </div>
+  </div>
+</footer>
+        <!-- Optional JavaScripte two! -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src= "js/Popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4fd8a01d1.js" crossorigin="anonymous"></script>
+
+
+    <!--login-->
+   <script>
+       const inputLoginBtn = document.querySelector("#input__login__btn");
+       inputLoginBtn.addEventListener('click' , function(e){
+         e.preventDefault();
+       })
+
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+                 signupBtn.onclick = (()=>{
+                   loginForm.style.marginLeft = "-50%";
+                   loginText.style.marginLeft = "-50%";
+                 });
+                 loginBtn.onclick = (()=>{
+                   loginForm.style.marginLeft = "0%";
+                   loginText.style.marginLeft = "0%";
+                 });
+                 signupLink.onclick = (()=>{
+                   signupBtn.click();
+                   return false;
+                 });
+   </script>
+   <!--inc dec start-->
+   <script>
+      function numberButtonFunc(t){
+        var n,a=t.parent().find("input").val();$('input[type="text"]').each(function(){parseInt($(this).val())}),
+          n=t.hasClass("qtyInc")?parseFloat(a)+1:a>0?parseFloat(a)-1:0,t.parent().find("input").val(n).trigger("change")}
+          $(document).on("click",".qtyDec, .qtyInc",function(){numberButtonFunc($(this))}),
+          $(".gty-container").each(function(){var t=$(this);
+
+            $('input[name="adult_number"]',t).change(function(){
+              var n=parseInt($(this).val()),a=n;
+              "number"==typeof n&&(a=n<2?n+" "+$(".adult",t).data("text"):n+" "+$(".adult",t).data("text-multi")),$(".adult",t).html(a)}),
+            $('input[name="adult_number"]',t).trigger("change"),
+
+            $('input[name="infants_number"]',t).change(function(){
+              var n=parseInt($(this).val()),a=n;
+              "number"==typeof n&&(a=n<2?n+" "+$(".infant",t).data("text"):n+" "+$(".infant",t).data("text-multi")),
+              $(".infant",t).html(a)}),
+            $('input[name="infants_number"]',t).trigger("change"),
+
+            $('input[name="room_number"]',t).change(function(){
+              var n=parseInt($(this).val()),a=n;
+              "number"==typeof n&&(a=n<2?n+" "+$(".room",t).data("text"):n+" "+$(".room",t).data("text-multi")),$(".room",t).html(a)}),
+            $('input[name="room_number"]',t).trigger("change"),
+
+
+            $('input[name="child_number"]',t).change(function(){
+              var n=parseInt($(this).val()),a=n;"number"==typeof n&&(a=n<2?n+" "+$(".children",t).data("text"):n+" "+$(".children",t).data("text-multi")),
+              $(".children",t).html(a)}),
+            $('input[name="child_number"]',t).trigger("change")
+          });
+    </script>
+   <!--inc dec end-->
+    <!--chat option start-->
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "108071251357885");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--chat option start-->
+    </body>
+</html>
